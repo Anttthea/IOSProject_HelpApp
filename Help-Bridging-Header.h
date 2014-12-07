@@ -3,5 +3,8 @@
 //
 
 
+
+#import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <Firebase/Firebase.h>

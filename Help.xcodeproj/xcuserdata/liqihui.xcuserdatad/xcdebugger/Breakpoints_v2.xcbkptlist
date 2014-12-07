@@ -10,12 +10,322 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Help/SignUpViewController.swift"
-            timestampString = "438837184.724804"
+            timestampString = "439169182.949253"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "SignUp(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Help/InitializationViewController.swift"
+            timestampString = "439158060.591033"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "InitializationViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.fbLoginView.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.FBLoginView&gt;"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.673456"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.fbLoginView.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.FBLoginView&gt;"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.677574"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.677694"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "103">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)() -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.677803"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.677916"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "73">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Help/InitializationViewController.swift"
+            timestampString = "439158060.591033"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "InitializationViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.passwordTextField.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.687571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.passwordTextField.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.687768"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.688009"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)() -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.688131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439099886.688239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Help/InitializationViewController.swift"
+            timestampString = "439158060.591033"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "InitializationViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.passwordTextField.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439100405.021626"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.passwordTextField.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439100405.021803"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.passwordTextField.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439100405.021919"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439100405.022039"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)() -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439100405.022166"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Help.InitializationViewController.init (Help.InitializationViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Help.InitializationViewController"
+                  moduleName = "Help"
+                  urlString = "file:///Users/liqihui/Documents/ios%20workplace/HelpApp/Help/InitializationViewController.swift"
+                  timestampString = "439100405.022293"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Help/MessageTableViewController.swift"
+            timestampString = "439164993.216838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "SendButton(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Help/MessageTableViewController.swift"
+            timestampString = "439166713.665882"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "loadNewUserData()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

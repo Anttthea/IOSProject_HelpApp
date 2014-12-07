@@ -9,86 +9,31 @@
 import CoreLocation
 import UIKit
 
-class InitializationViewController: UIViewController, CLLocationManagerDelegate, FBLoginViewDelegate,SignUpControllerDelegate{
+class InitializationViewController: UIViewController, CLLocationManagerDelegate, SignUpControllerDelegate{
     @IBOutlet var name: UITextField!
     @IBOutlet var initializationView: UIView!
-    @IBOutlet var fbLoginView : FBLoginView!
-
     @IBOutlet var passwordTextField: UITextField!
     var tap: UITapGestureRecognizer!
     var myObject : PFObject!
     var myID : String!
+    var friendList: [String] = []
     //var timer : NSTimer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-                self.fbLoginView.delegate = self
-        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
-        //Tap Gesture Recognizer
+         self.passwordTextField.secureTextEntry = true
         self.tap=UITapGestureRecognizer()
         setup()
     }
     
 
-    func myVCDidFinish(controller:SignUpViewController,Name:String,Password:String){
+    func myVCDidFinish(controller:SignUpViewController,Name:String,Password:String, FriendList:[String]){
         name.text = Name
         passwordTextField.text = Password
-        
+        self.friendList = FriendList
         controller.navigationController?.popViewControllerAnimated(true)
     }
-    // Facebook Delegate Methods
-    
-    func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
-        println("User Logged In")
-    }
-    
-    func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser) {
-        println("User: \(user)")
-        println("User ID: \(user.objectID)")
-        println("User Name: \(user.name)")
-        var userEmail = user.objectForKey("email") as String
-        println("User Email: \(userEmail)")
-        /* make the API call */
-//        FBRequestConnection.startForMyFriendsWithCompletionHandler({ (connection, result, error: NSError!) -> Void in
-//            if error == nil {
-//                var friendObjects = result["data"] as [NSDictionary]
-//                for friendObject in friendObjects {
-//                    println(friendObject["id"] as NSString)
-//                }
-//                println("\(friendObjects.count)")
-//            } else {
-//                println("Error requesting friends list form facebook")
-//                println("\(error)")
-//            }
-//        })
-        // Get List Of Friends
-//        var friendsRequest : FBRequest = FBRequest.requestForMyFriends()
-//        friendsRequest.startWithCompletionHandler{(connection:FBRequestConnection!, result:AnyObject!, error:NSError!) -> Void in
-//            var resultdict = result as NSDictionary
-//            println("Result Dict: \(resultdict)")
-//            var data : NSArray = resultdict.objectForKey("data") as NSArray
-//            
-//            for i in 0..<data.count {
-//                let valueDict : NSDictionary = data[i] as NSDictionary
-//                let id = valueDict.objectForKey("id") as String
-//                println("the id value is \(id)")
-//            }
-//            
-//            var friends = resultdict.objectForKey("data") as NSArray
-//            println("Found \(friends.count) friends")
-//        }
-    }
-    
-    func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
-        println("User Logged Out")
-    }
-    
-    func loginView(loginView : FBLoginView!, handleError:NSError) {
-        println("Error: \(handleError.localizedDescription)")
-    }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -115,28 +60,31 @@ class InitializationViewController: UIViewController, CLLocationManagerDelegate,
                 if var nextViewController = segue.destinationViewController as? MessageTableViewController {
                     var nameString = self.name.text
                     var passwordString = self.passwordTextField.text
+                    
                     if(nameString=="" || passwordString=="")
                     {
                         self.showNullAlert()
                         return
-                    }else{
-                        PFUser.logInWithUsernameInBackground(nameString, password:passwordString) {
-                            (user: PFUser!, error: NSError!) -> Void in
-                            if user != nil {
-                                // Do stuff after successful login.
-                                self.myObject = PFObject(className: "PeopleLocation")
-                                self.myObject["Name"]=user.username
-                                self.myObject.saveInBackground()
-
-                                nextViewController.myID = self.myID
-                            } else {
-                                // The login failed. Check error to see why.
-                               println("Error: \(error.localizedDescription)")
-                            }
-                        }
                     }
-
-                }
+                    
+                    var user: PFUser!
+                    var error: NSError?
+                    user = PFUser.logInWithUsername(nameString, password: passwordString, error: &error)
+                    if (user != nil) {
+                        // Do stuff after successful login.
+                        self.myObject = PFObject(className: "PeopleLocation")
+                        self.myObject["Name"]=user.username
+                        self.myObject.save()
+                        nextViewController.friendList = self.friendList
+                        nextViewController.myID = self.myID
+                    } else {
+                        // The login failed. Check error to see why.
+                        println("Error: \(error!.localizedDescription)")
+                        self.showAlert("Alert", Message: "Error: \(error.debugDescription)")
+                        return
+                        
+                    }
+                                        }
             
             case "toSignUp":if var nextViewController = segue.destinationViewController as? SignUpViewController {
                  nextViewController.delegate = self
@@ -155,6 +103,19 @@ class InitializationViewController: UIViewController, CLLocationManagerDelegate,
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
+    func showUserNotExistAlert(){
+        var alert = UIAlertController(title: "User not exist", message: "User does not exist, please try again", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+
+    
+    func showAlert(Title: NSString, Message: NSString){
+        var alert = UIAlertController(title: Title, message: Message, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+
     func setup()
     {
         self.initializationView.addGestureRecognizer(self.tap)
