@@ -5,6 +5,8 @@ You can use the following credentials to log into the the app
 2. Username: anna || Password: 1234
 3. Username: yuri || Password: 1234
 
+The SCREENSHOTS are included in the folder “Screenshots”
+
 ****************************************************************************************
 
 If the build fails please delete the references to the following dependencies (in Xcode) and re-add them one by one from the project folder. This should solve the dependencies issues:
